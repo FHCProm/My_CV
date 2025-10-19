@@ -5,19 +5,129 @@
       <div class="name">CHIN GUO REN</div>
       <div class="degree">DEGREE IN INFORMATION TECHNOLOGY</div>
     </div>
-    <div class="col right">+601131850270</div>
+    <div class="col contact-right">+601131850270</div>
   </div>
 </div>
 
 <div class="content">
   <div class="left">
-    <div class="row">Row 1 test</div>
-    <div class="row">Row 2</div>
-    <div class="row">Row 3</div>
-    <div class="row">Row 4</div>
-    <div class="row">Row 5</div>
+    <div class="row">
+      <div class="section-title">Work Experience:</div>
+      <ul class="experience-list">
+        <li>
+          IT Technician – Specializing in networking, firewall config, and
+          advanced hardware repair
+        </li>
+        <li>
+          Built institutional-grade trading infrastructure for US stock markets
+        </li>
+        <li>
+          Expert in OpenWRT, kernel modules, VPN/proxy integration, and system
+          resilience
+        </li>
+        <li>
+          Cloud cost auditor – AWS billing breakdown and VPC/EC2 optimization
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="section-title">Skills & Tools:</div>
+      <ul class="skills-list">
+        <li>Networking, firewall config, VPN/proxy integration</li>
+        <li>OpenWRT, kernel modules, system resilience</li>
+        <li>Linux CLI, iptables, Docker, cloud infrastructure</li>
+        <li>Macro scripting (Razer Synapse) for gaming & trading</li>
+        <li>Hardware diagnostics: BIOS, multimeter, loopback testing</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="section-title">Projects & Achievements:</div>
+      <ul class="projects-list">
+        <li>
+          Engineered institutional-grade trading infrastructure for US stock
+          markets
+        </li>
+        <li>
+          Developed stealth-grade streaming proxy with DNS obfuscation and
+          regional latency optimization
+        </li>
+        <li>
+          Scripted advanced Razer Synapse macros for Dota 2 Invoker and trading
+          automation
+        </li>
+        <li>
+          Benchmarked KLIA T1 and R&R Rawang dining for efficient travel
+          workflows
+        </li>
+        <li>
+          Audited AWS nano instance costs, optimizing VPC and EC2 resource
+          teardown
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="section-title">Certifications & Education:</div>
+      <ul class="education-list">
+        <li>
+          Degree in Information Technology – [Your University Name, Graduation
+          Year]
+        </li>
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>CompTIA Network+ and Security+ Certified</li>
+        <li>Advanced Linux CLI & Docker Workshop – [Provider or Platform]</li>
+        <li>
+          Firewall & VPN Configuration Masterclass – [Provider or Platform]
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="section-title">Contact & Links:</div>
+      <ul class="contact-list">
+        <li>
+          Email: <a href="mailto:chinguoren999@hotmail.com"
+            >chinguoren999@hotmail.com</a
+          >
+        </li>
+        <li>Phone: <a href="tel:+601131850270">+6011-3185 0270</a></li>
+        <li>
+          GitHub: <a href="https://github.com/chinguoren999" target="_blank"
+            >github.com/chinguoren999</a
+          >
+        </li>
+        <li>
+          LinkedIn: <a
+            href="https://www.linkedin.com/in/chinguoren999"
+            target="_blank">linkedin.com/in/chinguoren999</a
+          >
+        </li>
+        <li>
+          CV Site Repo: <a
+            href="https://github.com/chinguoren999/astro-cv"
+            target="_blank">astro-cv on GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="right">Right Column (Visible on large screens)</div>
+  <div class="right">
+    <div class="section-title">Quick Profile</div>
+    <p>
+      Systems-level IT technician with deep expertise in networking, cloud cost
+      audits, and macro scripting.
+    </p>
+
+    <div class="section-title">Tech Stack</div>
+    <ul class="tech-list">
+      <li>OpenWRT</li>
+      <li>Docker</li>
+      <li>Linux CLI</li>
+      <li>AWS</li>
+      <li>Razer Synapse</li>
+    </ul>
+
+    <div class="section-title">Motto</div>
+    <p>"Engineer autonomy. Benchmark everything."</p>
+  </div>
 </div>
 
 <style>
@@ -27,8 +137,8 @@
   }
 
   .cv-title {
-    background-color: #34495e;
-    color: white;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
     padding: 30px 20px;
   }
 
@@ -45,8 +155,9 @@
     text-align: center;
   }
 
-  .left,
-  .right {
+  .contact-right {
+    flex: 1;
+    text-align: center;
     font-size: 1.1em;
     font-weight: bold;
   }
@@ -80,29 +191,93 @@
     font-weight: bold;
     font-size: 1.2em;
     min-height: 150px;
+    transition: filter 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   }
 
+  .row:hover {
+    filter: brightness(1.1);
+  }
+
+  /* Professional palette */
   .row:nth-child(1) {
-    background-color: #e74c3c;
+    background-color: #1a1a1a;
   }
   .row:nth-child(2) {
-    background-color: #f39c12;
+    background-color: #2a2a2a;
   }
   .row:nth-child(3) {
-    background-color: #27ae60;
+    background-color: #3a3a3a;
   }
   .row:nth-child(4) {
-    background-color: #2980b9;
+    background-color: #4a4a4a;
   }
   .row:nth-child(5) {
-    background-color: #8e44ad;
+    background-color: #5a5a5a;
   }
 
   .right {
     width: 20%;
-    background-color: #2c3e50;
-    color: white;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
     padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .experience-list,
+  .skills-list,
+  .projects-list,
+  .education-list {
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.6em;
+  }
+
+  .experience-list {
+    list-style-type: disc;
+  }
+  .skills-list {
+    list-style-type: square;
+  }
+  .projects-list {
+    list-style-type: circle;
+  }
+  .education-list {
+    list-style-type: disc;
+  }
+
+  .contact-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.8em;
+  }
+
+  .contact-list a {
+    color: #ecf0f1;
+    text-decoration: underline;
+  }
+
+  .tech-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.95em;
+    line-height: 1.6em;
+  }
+
+  .right .section-title {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   @media (max-width: 768px) {

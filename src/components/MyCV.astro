@@ -1,16 +1,16 @@
 <div class="cv-title">
-  <div class="title-row">
-    <div class="col left">chinguoren999@hotmail.com</div>
+  <div class="title-row font-sans">
+    <div class="col left font-bold">chinguoren999@hotmail.com</div>
     <div class="col center">
       <div class="name">CHIN GUO REN</div>
-      <div class="degree">DEGREE IN INFORMATION TECHNOLOGY</div>
+      <div class="degree tracking-tight">DEGREE IN INFORMATION TECHNOLOGY</div>
     </div>
-    <div class="col contact-right">+601131850270</div>
+    <div class="col contact-right font-bold">+601131850270</div>
   </div>
 </div>
 
 <div class="content">
-  <div class="left">
+  <div class="left font-sans font-normal">
     <div class="row">
       <div class="section-title">Work Experience:</div>
       <ul class="experience-list">
@@ -21,12 +21,34 @@
         <li>
           Built institutional-grade trading infrastructure for US stock markets
         </li>
+        <li>Expert in OpenWRT, VPN/proxy integration, and system resilience</li>
         <li>
-          Expert in OpenWRT, kernel modules, VPN/proxy integration, and system
-          resilience
+          Proficient in configuring and managing network switches, with strong
+          expertise in Aruba and Cisco platforms
         </li>
         <li>
-          Cloud cost auditor – AWS billing breakdown and VPC/EC2 optimization
+          Experienced in advanced physical cabling for both network and
+          electrical systems.
+        </li>
+        <li>
+          Skilled in access list configuration for traffic filtering and network
+          security.
+        </li>
+        <li>
+          Professional Network Infrastructure Designer. Handled IT cabling
+          project more than RM20k in Central Medicare Sdn Bhd
+        </li>
+        <li>CCTV professional in wireless and wired profressional setup</li>
+        <li>
+          Single phase electrical DB wiring and surge protector installation
+        </li>
+        <li>
+          Experienced in installing and maintaining polyethylene (PE), PVC, and
+          copper piping systems for residential houses
+        </li>
+        <li>
+          Skilled in laying, routing, and securing electrical cables for
+          residential and commercial projects.
         </li>
       </ul>
     </div>
@@ -34,10 +56,12 @@
       <div class="section-title">Skills & Tools:</div>
       <ul class="skills-list">
         <li>Networking, firewall config, VPN/proxy integration</li>
-        <li>OpenWRT, kernel modules, system resilience</li>
+        <li>OpenWRT,optimized for system resilience</li>
         <li>Linux CLI, iptables, Docker, cloud infrastructure</li>
-        <li>Macro scripting (Razer Synapse) for gaming & trading</li>
-        <li>Hardware diagnostics: BIOS, multimeter, loopback testing</li>
+        <li>
+          Scripting trading strategies and deep understanding of candlestick
+          chart
+        </li>
       </ul>
     </div>
     <div class="row">
@@ -51,14 +75,7 @@
           Developed stealth-grade streaming proxy with DNS obfuscation and
           regional latency optimization
         </li>
-        <li>
-          Scripted advanced Razer Synapse macros for Dota 2 Invoker and trading
-          automation
-        </li>
-        <li>
-          Benchmarked KLIA T1 and R&R Rawang dining for efficient travel
-          workflows
-        </li>
+
         <li>
           Audited AWS nano instance costs, optimizing VPC and EC2 resource
           teardown
@@ -69,15 +86,10 @@
       <div class="section-title">Certifications & Education:</div>
       <ul class="education-list">
         <li>
-          Degree in Information Technology – [Your University Name, Graduation
-          Year]
+          Degree in Information Technology – Asia Pacific University, 2021
         </li>
-        <li>AWS Certified Solutions Architect – Associate</li>
-        <li>CompTIA Network+ and Security+ Certified</li>
-        <li>Advanced Linux CLI & Docker Workshop – [Provider or Platform]</li>
-        <li>
-          Firewall & VPN Configuration Masterclass – [Provider or Platform]
-        </li>
+        <li>VueJs Website Building Masterclass</li>
+        <li>Advanced Toastmaster Speaker</li>
       </ul>
     </div>
     <div class="row">
@@ -109,7 +121,7 @@
       </ul>
     </div>
   </div>
-  <div class="right">
+  <div class="right font-mono">
     <div class="section-title">Quick Profile</div>
     <p>
       Systems-level IT technician with deep expertise in networking, cloud cost
@@ -121,24 +133,47 @@
       <li>OpenWRT</li>
       <li>Docker</li>
       <li>Linux CLI</li>
-      <li>AWS</li>
-      <li>Razer Synapse</li>
+      <li>Multimeter</li>
+      <li>Angle Grinder</li>
+      <li>Website Development</li>
+      <li>Server Management</li>
+      <li>Top PC Building Skill</li>
+      <li>AWS cloud EC2 Instance</li>
     </ul>
 
     <div class="section-title">Motto</div>
-    <p>"Engineer autonomy. Benchmark everything."</p>
+    <p>"Speed and Safety"</p>
   </div>
 </div>
+<a href="/ai-agent" class="contact-float" title="Meet my AI assistant">
+  Talk to me
+</a>
 
 <style>
+  :root {
+    --cosmic-orange: #ff6a00;
+    --cosmic-orange-dark: #b34700;
+    --cosmic-orange-light: #ff944d;
+    --base-dark: #121212;
+    --text-light: #f5f5f5;
+    --text-muted: #cccccc;
+    --shadow-dark: rgba(0, 0, 0, 0.5);
+  }
+
   body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+    background-color: var(--base-dark);
+    color: var(--text-light);
   }
 
   .cv-title {
-    background-color: #1a1a1a;
-    color: #f2f2f2;
+    background: linear-gradient(
+      135deg,
+      var(--cosmic-orange),
+      var(--cosmic-orange-dark)
+    );
+    color: var(--text-light);
     padding: 30px 20px;
   }
 
@@ -155,23 +190,17 @@
     text-align: center;
   }
 
-  .contact-right {
-    flex: 1;
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-
   .center .name {
     font-size: 1.8em;
     font-weight: bold;
+    color: var(--cosmic-orange-light);
   }
 
   .center .degree {
     font-size: 1.1em;
     font-weight: 500;
     margin-top: 5px;
-    color: #ecf0f1;
+    color: var(--text-muted);
   }
 
   .content {
@@ -186,90 +215,66 @@
   }
 
   .row {
+    background: linear-gradient(
+      135deg,
+      var(--base-dark),
+      var(--cosmic-orange-dark)
+    );
+    color: var(--text-light);
+    border-left: 4px solid var(--cosmic-orange);
+    box-shadow:
+      0.3rem 0.3rem 0.6rem var(--shadow-dark),
+      -0.2rem -0.2rem 0.5rem var(--cosmic-orange-light);
+    border-radius: 12px;
     padding: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    min-height: 150px;
-    transition: filter 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition:
+      box-shadow 0.3s ease,
+      background-color 0.3s ease;
   }
 
   .row:hover {
-    filter: brightness(1.1);
-  }
-
-  /* Professional palette */
-  .row:nth-child(1) {
-    background-color: #1a1a1a;
-  }
-  .row:nth-child(2) {
-    background-color: #2a2a2a;
-  }
-  .row:nth-child(3) {
-    background-color: #3a3a3a;
-  }
-  .row:nth-child(4) {
-    background-color: #4a4a4a;
-  }
-  .row:nth-child(5) {
-    background-color: #5a5a5a;
-  }
-
-  .right {
-    width: 20%;
-    background-color: #1a1a1a;
-    color: #f2f2f2;
-    padding: 20px;
+    background-color: #1f1f1f;
+    box-shadow:
+      inset 0.2rem 0.2rem 0.5rem var(--shadow-dark),
+      inset -0.2rem -0.2rem 0.5rem var(--cosmic-orange-light);
   }
 
   .section-title {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: var(--cosmic-orange-light);
+    letter-spacing: 0.5px;
   }
 
   .experience-list,
   .skills-list,
   .projects-list,
-  .education-list {
-    padding-left: 20px;
-    font-size: 1em;
-    font-weight: normal;
+  .education-list,
+  .contact-list,
+  .tech-list {
+    font-size: 0.95em;
     line-height: 1.6em;
-  }
-
-  .experience-list {
-    list-style-type: disc;
-  }
-  .skills-list {
-    list-style-type: square;
-  }
-  .projects-list {
-    list-style-type: circle;
-  }
-  .education-list {
-    list-style-type: disc;
-  }
-
-  .contact-list {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.8em;
+    color: var(--text-muted);
   }
 
   .contact-list a {
-    color: #ecf0f1;
+    color: var(--cosmic-orange);
     text-decoration: underline;
   }
 
-  .tech-list {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 0.95em;
-    line-height: 1.6em;
+  .contact-list a:hover {
+    color: var(--cosmic-orange-light);
+  }
+
+  .right {
+    width: 20%;
+    background-color: var(--base-dark);
+    color: var(--text-light);
+    padding: 20px;
   }
 
   .right .section-title {
@@ -278,6 +283,71 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  .contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1em;
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: var(--cosmic-orange);
+    color: var(--base-dark);
+    box-shadow:
+      0 0 10px var(--cosmic-orange),
+      0 0 20px var(--cosmic-orange-light),
+      0 0 30px var(--cosmic-orange);
+    animation: orangePulse 4s infinite ease-in-out;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes orangePulse {
+    0%,
+    100% {
+      box-shadow:
+        0 0 10px var(--cosmic-orange),
+        0 0 20px var(--cosmic-orange-light),
+        0 0 30px var(--cosmic-orange);
+    }
+    50% {
+      box-shadow:
+        0 0 10px var(--cosmic-orange-light),
+        0 0 20px var(--cosmic-orange),
+        0 0 30px var(--cosmic-orange-light);
+    }
+  }
+
+  .contact-float:hover {
+    transform: scale(1.12);
+    background-color: #3a3a3a;
+    color: #ffffff;
+    box-shadow:
+      0 0 20px rgba(255, 0, 0, 0.9),
+      0 0 30px rgba(0, 255, 0, 0.9),
+      0 0 40px rgba(0, 0, 255, 0.9),
+      inset 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5),
+      inset -0.3rem -0.3rem 0.6rem rgba(255, 255, 255, 0.1);
+  }
+
+  .contact-float::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 0, 255, 0.2),
+      transparent 70%
+    );
+    z-index: -1;
   }
 
   @media (max-width: 768px) {

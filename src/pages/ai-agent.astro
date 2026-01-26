@@ -1,0 +1,478 @@
+---
+import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
+---
+
+<Layout>
+  <html lang="en">
+    <head>
+      <title>AI Agent | Chin Guo Ren</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/styles/global.css" />
+      <!-- Optional -->
+    </head>
+    <body>
+      <main class="ai-agent-page">
+        <section class="hero">
+          <h1 class="hero-title">
+            <span class="avatar-container">
+              <img src="./src/assets/water-pump-motor.png" alt="AI Avatar" />
+            </span> Meet Chin Guo Ren
+          </h1>
+          <p>
+            This is your direct line to Chin Guo Ren, the legendary coder who
+            treats coding as a side dish.
+          </p>
+        </section>
+
+        <section class="agent-interface">
+          <!-- Embed your AI assistant here -->
+          <!-- Example: iframe, chatbot widget, or custom component -->
+          <section class="chatbot-container">
+            <div class="chat-window" id="chat-window">
+              <!-- Messages will appear here -->
+            </div>
+            <form class="chat-input-area" id="chat-form">
+              <input
+                type="text"
+                id="user-input"
+                placeholder="Ask me about Chin Guo Ren..."
+                autocomplete="off"
+                required
+              />
+              <button type="submit">Send</button>
+            </form>
+          </section>
+
+          <section class="chatbot-container friends-chat">
+            <div class="friends-window">
+              <h2>Friends & Referrals</h2>
+              <ul class="friends-list">
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/apple.jpeg"
+                    alt="Alice Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Alice Tan</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <p class="note">
+                      “Creative thinker, helped me design my portfolio.”
+                    </p>
+                  </div>
+                </li>
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/friend2.png"
+                    alt="Bob Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Bob Lim</h3>
+                    <p class="role">Software Engineer</p>
+                    <p class="note">“Referral for backend projects.”</p>
+                  </div>
+                </li>
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/friend3.png"
+                    alt="Charlie Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Charlie Wong</h3>
+                    <p class="role">Startup Founder</p>
+                    <p class="note">“Trusted collaborator on AI ventures.”</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <a href="/" class="back-button">← Back to CV</a>
+
+        <style>
+          .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #ff944d;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #1f1f1f;
+            padding: 10px 16px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 148, 77, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          .back-button:hover {
+            background-color: #ff944d;
+            color: #121212;
+          }
+
+          .ai-agent-page {
+            background-color: #121212;
+            color: #f5f5f5;
+            font-family: "Inter", sans-serif;
+            padding: 40px 20px;
+
+            margin: auto;
+          }
+
+          .hero {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+
+          .hero h1 {
+            font-size: 2em;
+            color: #ff944d;
+          }
+
+          .hero-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px; /* space between avatar and text */
+            font-size: 2em;
+            color: #ff944d;
+          }
+          .avatar-container {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2a2a2a; /* fallback background */
+            box-shadow: 0 0 8px rgba(255, 148, 77, 0.4);
+          }
+          .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ensures image fits nicely */
+          }
+
+          .avatar-container:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 12px rgba(255, 148, 77, 0.6);
+          }
+
+          .agent-interface {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+          }
+
+          .agent-frame {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: none;
+            border-radius: 12px;
+            box-shadow:
+              0 0 10px rgba(255, 106, 0, 0.5),
+              0 0 20px rgba(255, 148, 77, 0.3);
+          }
+
+          .chatbot-container {
+            flex: 1;
+            max-width: 48%; /* each takes half the width */
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            box-shadow:
+              0 0 10px rgba(255, 106, 0, 0.5),
+              0 0 20px rgba(255, 148, 77, 0.3);
+            overflow: hidden;
+          }
+
+          .chat-window {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto; /* keep vertical scrolling */
+            color: #f5f5f5;
+            font-family: "Inter", sans-serif;
+
+            /* Hide scrollbar in Firefox */
+            scrollbar-width: none;
+
+            /* Hide scrollbar in IE/Edge */
+            -ms-overflow-style: none;
+          }
+
+          /* Hide scrollbar in Chrome, Safari, Opera */
+          .chat-window::-webkit-scrollbar {
+            display: none;
+          }
+
+          .chat-message {
+            margin-bottom: 15px;
+            line-height: 1.4;
+          }
+
+          .chat-input-area {
+            display: flex;
+            border-top: 1px solid #333;
+            background-color: #121212;
+            padding: 10px;
+          }
+          .chat-input-area input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            margin-right: 10px;
+            font-size: 1em;
+            background-color: #2a2a2a;
+            color: #f5f5f5;
+          }
+          .chat-input-area input:focus {
+            outline: none;
+            border: 1px solid #ff944d;
+          }
+          .chat-input-area button {
+            background-color: #ff944d;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          .chat-input-area button:hover {
+            background-color: #ffb366;
+          }
+
+          .chat-message.user {
+            text-align: right;
+            background-color: #ff944d; /* bright orange bubble */
+            color: #121212; /* dark text for contrast */
+            padding: 10px 14px;
+            border-radius: 16px 16px 0 16px; /* rounded bubble shape */
+            display: inline-block;
+            max-width: 70%;
+            font-weight: 500;
+          }
+          .chat-message.ai {
+            text-align: left;
+            background-color: #2a2a2a; /* darker bubble */
+            color: #f5f5f5; /* light text */
+            padding: 10px 14px;
+            border-radius: 16px 16px 16px 0; /* opposite rounded bubble */
+            display: inline-block;
+            max-width: 70%;
+            font-style: normal;
+            position: relative;
+            white-space: pre-wrap;
+          } /* Optional: add a subtle "AI" label */
+          .chat-message.ai::before {
+            content: "🤖 AI";
+            font-size: 0.75em;
+            color: #ff944d;
+            display: block;
+            margin-bottom: 4px;
+          } /* Optional: add a subtle "You" label */
+          .chat-message.user::before {
+            content: "👤 You";
+            font-size: 0.75em;
+            color: #333;
+            display: block;
+            margin-bottom: 4px;
+          }
+
+          .chat-message.loading {
+            font-style: italic;
+            opacity: 0.7;
+          }
+          .chat-message.error {
+            color: #ff4d4d;
+          }
+
+          .friends-chat .friends-window {
+            padding: 20px;
+            color: #f5f5f5;
+            font-family: "Inter", sans-serif;
+          }
+          .friends-chat h2 {
+            color: #ff944d;
+            margin-bottom: 16px;
+            font-size: 1.4em;
+            text-align: center;
+          }
+          .friends-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          .friend-card {
+            display: flex;
+            align-items: flex-start;
+            background: #2a2a2a;
+            margin-bottom: 12px;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 0 6px rgba(255, 148, 77, 0.3);
+            transition:
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+          }
+          .friend-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px rgba(255, 148, 77, 0.5);
+          }
+          .friend-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+            flex-shrink: 0;
+          }
+          .friend-info h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #ff944d;
+          }
+          .friend-info .role {
+            margin: 2px 0;
+            font-size: 0.9em;
+            color: #ccc;
+          }
+          .friend-info .note {
+            margin: 4px 0 0;
+            font-size: 0.85em;
+            color: #aaa;
+            font-style: italic;
+          }
+        </style>
+      </main>
+    </body>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const chatWindow = document.getElementById("chat-window");
+
+        // Create AI bubble
+        const introMessage = document.createElement("div");
+        introMessage.className = "chat-row ai";
+        introMessage.innerHTML = `
+    <span class="chat-avatar">
+      <img src="./src/assets/apple.jpeg" alt="AI Avatar" />
+    </span>
+    <div class="chat-message ai"></div>
+  `;
+        chatWindow.appendChild(introMessage);
+
+        const aiBubble = introMessage.querySelector(".chat-message.ai");
+        aiBubble.textContent = "";
+
+        // Intro text
+        const introText = "Hi there, I am Guo Ren's assistant";
+        const words = introText.split(" ");
+        let wordIndex = 0;
+
+        function typeWords() {
+          if (wordIndex < words.length) {
+            aiBubble.textContent +=
+              (wordIndex > 0 ? " " : "") + words[wordIndex];
+            wordIndex++;
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+            setTimeout(typeWords, 50); // delay per word
+          }
+        }
+
+        typeWords();
+      });
+
+      document
+        .getElementById("chat-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const input = document.getElementById("user-input").value;
+          const chatWindow = document.getElementById("chat-window");
+
+          // Show user message chat
+          chatWindow.innerHTML += `<div class="chat-message user">${input}</div>`;
+          document.getElementById("user-input").value = "";
+
+          renderAIResponse(input, chatWindow);
+        });
+
+      async function renderAIResponse(message, chatWindow) {
+        // create AI bubble
+        const loadingMessage = document.createElement("div");
+        loadingMessage.className = "chat-row ai";
+        loadingMessage.innerHTML = `
+    <span class="chat-avatar">
+      <img src="./src/assets/apple.jpeg" alt="AI Avatar" />
+    </span>
+    <div class="chat-message ai loading">Guo Ren is typing...</div>
+  `;
+        chatWindow.appendChild(loadingMessage);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+
+        const aiBubble = loadingMessage.querySelector(".chat-message.ai");
+
+        try {
+          // Call your API Gateway endpoint
+          const res = await fetch(
+            "https://nouogp5o7b.execute-api.ap-southeast-5.amazonaws.com/default/Azure_AI",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message }),
+            },
+          );
+
+          if (!res.ok) throw new Error(`API error: ${res.status}`);
+
+          const data = await res.json();
+          const lines = data.reply.split("\n");
+
+          aiBubble.classList.remove("loading");
+          aiBubble.textContent = "";
+
+          let i = 0;
+          function showNextLine() {
+            if (i < lines.length) {
+              const lineDiv = document.createElement("div");
+              lineDiv.className = "chat-line";
+              aiBubble.appendChild(lineDiv);
+
+              const words = lines[i].split(" ");
+              let wordIndex = 0;
+
+              function typeWords() {
+                if (wordIndex < words.length) {
+                  lineDiv.textContent +=
+                    (wordIndex > 0 ? " " : "") + words[wordIndex];
+                  wordIndex++;
+                  chatWindow.scrollTop = chatWindow.scrollHeight;
+                  setTimeout(typeWords, 50);
+                } else {
+                  i++;
+                  setTimeout(showNextLine, 20);
+                }
+              }
+
+              typeWords();
+            }
+          }
+          showNextLine();
+        } catch (err) {
+          console.error("Error calling API:", err);
+          aiBubble.textContent = "Error: Could not reach AI service.";
+          aiBubble.classList.add("error");
+        }
+      }
+    </script>
+  </html></Layout
+>

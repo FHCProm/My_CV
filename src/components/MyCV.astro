@@ -102,19 +102,19 @@
         </li>
         <li>Phone: <a href="tel:+601131850270">+6011-3185 0270</a></li>
         <li>
-          GitHub: <a href="https://github.com/chinguoren999" target="_blank"
+          GitHub: <a href="https://github.com/FHCProm" target="_blank"
             >github.com/chinguoren999</a
           >
         </li>
         <li>
           LinkedIn: <a
-            href="https://www.linkedin.com/in/chinguoren999"
+            href="https://www.linkedin.com/in/guo-ren-chin-6a6322120/"
             target="_blank">linkedin.com/in/chinguoren999</a
           >
         </li>
         <li>
           CV Site Repo: <a
-            href="https://github.com/chinguoren999/astro-cv"
+            href="https://github.com/FHCProm/My_CV"
             target="_blank">astro-cv on GitHub</a
           >
         </li>
@@ -145,35 +145,35 @@
     <p>"Speed and Safety"</p>
   </div>
 </div>
-<a href="/ai-agent" class="contact-float" title="Meet my AI assistant">
+<a href="/contactMe" class="contact-float" title="Contact Me">
   Talk to me
 </a>
 
 <style>
   :root {
-    --cosmic-orange: #ff6a00;
-    --cosmic-orange-dark: #b34700;
-    --cosmic-orange-light: #ff944d;
-    --base-dark: #121212;
-    --text-light: #f5f5f5;
-    --text-muted: #cccccc;
-    --shadow-dark: rgba(0, 0, 0, 0.5);
+    --theme-red: #e63946;
+    --theme-red-dark: #b91c1c;
+    --theme-red-light: #f87171;
+    --base-white: #ffffff;
+    --text-dark: #1d3557;
+    --text-muted: #457b9d;
+    --shadow-light: rgba(0, 0, 0, 0.1);
   }
 
   body {
     margin: 0;
     font-family: "Inter", sans-serif;
-    background-color: var(--base-dark);
-    color: var(--text-light);
+    background-color: var(--base-white);
+    color: var(--text-dark);
   }
 
   .cv-title {
     background: linear-gradient(
       135deg,
-      var(--cosmic-orange),
-      var(--cosmic-orange-dark)
+      var(--theme-red),
+      var(--theme-red-dark)
     );
-    color: var(--text-light);
+    color: #ffffff;
     padding: 30px 20px;
   }
 
@@ -193,14 +193,14 @@
   .center .name {
     font-size: 1.8em;
     font-weight: bold;
-    color: var(--cosmic-orange-light);
+    color: #ffffff;
   }
 
   .center .degree {
     font-size: 1.1em;
     font-weight: 500;
     margin-top: 5px;
-    color: var(--text-muted);
+    color: #f1faee;
   }
 
   .content {
@@ -217,14 +217,14 @@
   .row {
     background: linear-gradient(
       135deg,
-      var(--base-dark),
-      var(--cosmic-orange-dark)
+      var(--base-white),
+      #f8f9fa
     );
-    color: var(--text-light);
-    border-left: 4px solid var(--cosmic-orange);
+    color: var(--text-dark);
+    border-left: 4px solid var(--theme-red);
     box-shadow:
-      0.3rem 0.3rem 0.6rem var(--shadow-dark),
-      -0.2rem -0.2rem 0.5rem var(--cosmic-orange-light);
+      0.3rem 0.3rem 0.6rem var(--shadow-light),
+      -0.2rem -0.2rem 0.5rem #f1faee;
     border-radius: 12px;
     padding: 20px;
     margin: 20px;
@@ -236,17 +236,17 @@
   }
 
   .row:hover {
-    background-color: #1f1f1f;
+    background-color: #f1f1f1;
     box-shadow:
-      inset 0.2rem 0.2rem 0.5rem var(--shadow-dark),
-      inset -0.2rem -0.2rem 0.5rem var(--cosmic-orange-light);
+      inset 0.2rem 0.2rem 0.5rem var(--shadow-light),
+      inset -0.2rem -0.2rem 0.5rem var(--theme-red-light);
   }
 
   .section-title {
     font-size: 1.3em;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: var(--cosmic-orange-light);
+    color: var(--theme-red-light);
     letter-spacing: 0.5px;
   }
 
@@ -262,18 +262,18 @@
   }
 
   .contact-list a {
-    color: var(--cosmic-orange);
+    color: var(--theme-red);
     text-decoration: underline;
   }
 
   .contact-list a:hover {
-    color: var(--cosmic-orange-light);
+    color: var(--theme-red-light);
   }
 
   .right {
     width: 20%;
-    background-color: var(--base-dark);
-    color: var(--text-light);
+    background-color: #f8f9fa;
+    color: var(--text-dark);
     padding: 20px;
   }
 
@@ -296,40 +296,40 @@
     text-decoration: none;
     z-index: 1000;
     cursor: pointer;
-    background-color: var(--cosmic-orange);
-    color: var(--base-dark);
+    background-color: var(--theme-red);
+    color: #ffffff;
     box-shadow:
-      0 0 10px var(--cosmic-orange),
-      0 0 20px var(--cosmic-orange-light),
-      0 0 30px var(--cosmic-orange);
-    animation: orangePulse 4s infinite ease-in-out;
+      0 0 10px var(--theme-red),
+      0 0 20px var(--theme-red-light),
+      0 0 30px var(--theme-red);
+    animation: redPulse 4s infinite ease-in-out;
     transition: all 0.3s ease;
   }
 
-  @keyframes orangePulse {
+  @keyframes redPulse {
     0%,
     100% {
       box-shadow:
-        0 0 10px var(--cosmic-orange),
-        0 0 20px var(--cosmic-orange-light),
-        0 0 30px var(--cosmic-orange);
+        0 0 10px var(--theme-red),
+        0 0 20px var(--theme-red-light),
+        0 0 30px var(--theme-red);
     }
     50% {
       box-shadow:
-        0 0 10px var(--cosmic-orange-light),
-        0 0 20px var(--cosmic-orange),
-        0 0 30px var(--cosmic-orange-light);
+        0 0 10px var(--theme-red-light),
+        0 0 20px var(--theme-red),
+        0 0 30px var(--theme-red-light);
     }
   }
 
   .contact-float:hover {
     transform: scale(1.12);
-    background-color: #3a3a3a;
+    background-color: var(--theme-red-dark);
     color: #ffffff;
     box-shadow:
-      0 0 20px rgba(255, 0, 0, 0.9),
-      0 0 30px rgba(0, 255, 0, 0.9),
-      0 0 40px rgba(0, 0, 255, 0.9),
+      0 0 20px var(--theme-red),
+      0 0 30px var(--theme-red-light),
+      0 0 40px var(--theme-red),
       inset 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5),
       inset -0.3rem -0.3rem 0.6rem rgba(255, 255, 255, 0.1);
   }
@@ -344,7 +344,7 @@
     border-radius: 50%;
     background: radial-gradient(
       circle,
-      rgba(255, 0, 255, 0.2),
+      rgba(230, 57, 70, 0.2),
       transparent 70%
     );
     z-index: -1;

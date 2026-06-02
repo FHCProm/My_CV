@@ -1,0 +1,327 @@
+---
+import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
+---
+
+<Layout>
+  <html lang="en">
+    <head>
+      <title>Contact Me | Chin Guo Ren</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/styles/global.css" />
+      <!-- Optional -->
+    </head>
+    <body>
+      <main class="contact-me-page">
+        <section class="hero">
+          <h1 class="hero-title">
+            <span class="avatar-container">
+              <img src="./src/assets/guoren.jpeg" alt="AI Avatar" />
+            </span> Meet Chin Guo Ren
+          </h1>
+          <p>
+            This is your direct line to Chin Guo Ren, the legendary coder who
+            treats coding as a side dish.
+          </p>
+        </section>
+
+        <section class="agent-interface">
+          <!-- Profile Card -->
+          <section class="chatbot-container profile-card-container">
+            <div class="profile-window">
+              <h2>My Contact Info</h2>
+              <div class="profile-content">
+                <img
+                  src="./src/assets/guoren.jpeg"
+                  alt="Chin Guo Ren"
+                  class="profile-image"
+                />
+                <div class="profile-details">
+                  <h3>Chin Guo Ren</h3>
+                  <p class="profile-link">
+                    <strong>Email:</strong>
+                    <a href="mailto:chinguoren999@hotmail.com"
+                      >chinguoren999@hotmail.com</a
+                    >
+                  </p>
+                  <p class="profile-link">
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/601131850270" target="_blank"
+                      >+6011-3185 0270</a
+                    >
+                  </p>
+                  <p class="profile-link">
+                    <strong>LinkedIn:</strong>
+                    <a
+                      href="https://www.linkedin.com/in/chinguoren999"
+                      target="_blank">linkedin.com/in/chinguoren999</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Friends and Referrals -->
+          <section class="chatbot-container friends-chat">
+            <div class="friends-window">
+              <h2>Friends & Referrals</h2>
+              <ul class="friends-list">
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/peter.jpg"
+                    alt="Peter Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Peter</h3>
+                    <p class="role">IT manager</p>
+                    <p class="note">
+                      “Working with Guo Ren is a designer’s dream—he turns ideas
+                      into pixel-perfect reality with legendary speed.”
+                    </p>
+                  </div>
+                </li>
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/ken.png"
+                    alt="Ken Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Ken</h3>
+                    <p class="role">Project Senior Executive</p>
+                    <p class="note">
+                      “Guo Ren’s code is so clean, it’s practically
+                      self-documenting. The go-to guy for backend wizardry.”
+                    </p>
+                  </div>
+                </li>
+                <li class="friend-card">
+                  <img
+                    src="./src/assets/yi_ni.png"
+                    alt="Tan Yi Ni Avatar"
+                    class="friend-avatar"
+                  />
+                  <div class="friend-info">
+                    <h3>Tan Yi Ni</h3>
+                    <p class="role">Purchasing Executive</p>
+                    <p class="note">
+                      “Every startup needs a Guo Ren—he solves problems before
+                      you even know they exist. A true legend in tech.”
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <a href="/" class="back-button">← Back to CV</a>
+
+        <style>
+          .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #e63946;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+          }
+
+          .back-button:hover {
+            background-color: #e63946;
+            color: #ffffff;
+          }
+
+          .contact-me-page {
+            background-color: #ffffff;
+            color: #1d3557;
+            font-family: "Inter", sans-serif;
+            padding: 40px 20px;
+            margin: auto;
+          }
+
+          .hero {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+
+          .hero h1 {
+            font-size: 2em;
+            color: #e63946;
+          }
+
+          .hero-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-size: 2em;
+            color: #e63946;
+          }
+          .avatar-container {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 8px rgba(230, 57, 70, 0.2);
+          }
+          .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .avatar-container:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 12px rgba(230, 57, 70, 0.4);
+          }
+
+          .agent-interface {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+          }
+
+          .profile-window {
+            padding: 20px;
+            color: #1d3557;
+            font-family: "Inter", sans-serif;
+          }
+          .profile-window h2 {
+            color: #e63946;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            text-align: center;
+          }
+          .profile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+          }
+          .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e63946;
+            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.2);
+          }
+          .profile-details {
+            text-align: left;
+          }
+          .profile-details h3 {
+            text-align: center;
+            margin: 0 0 12px 0;
+            font-size: 1.3em;
+            color: #1d3557;
+          }
+          .profile-link {
+            margin: 8px 0;
+            font-size: 0.95em;
+            color: #457b9d;
+          }
+          .profile-link a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: 500;
+          }
+          .profile-link a:hover {
+            text-decoration: underline;
+          }
+
+          .chatbot-container {
+            flex: 1;
+            min-width: 320px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+          }
+
+
+          .friends-chat .friends-window {
+            padding: 20px;
+            color: #1d3557;
+            font-family: "Inter", sans-serif;
+          }
+          .friends-chat h2 {
+            color: #e63946;
+            margin-bottom: 16px;
+            font-size: 1.4em;
+            text-align: center;
+          }
+          .friends-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          .friend-card {
+            display: flex;
+            align-items: flex-start;
+            background: #ffffff;
+            margin-bottom: 12px;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+            transition:
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+          }
+          .friend-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          }
+          .friend-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+            flex-shrink: 0;
+          }
+          .friend-info h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #e63946;
+          }
+          .friend-info .role {
+            margin: 2px 0;
+            font-size: 0.9em;
+            color: #457b9d;
+          }
+          .friend-info .note {
+            margin: 4px 0 0;
+            font-size: 0.85em;
+            color: #6c757d;
+            font-style: italic;
+          }
+        </style>
+      </main>
+  </body>
+</html>
+</Layout>

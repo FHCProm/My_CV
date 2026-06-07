@@ -1,7 +1,7 @@
 {
-  "name": "@FHCProm/My_CV",
+  "name": "@FHCProm/my_cv",
   "type": "module",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

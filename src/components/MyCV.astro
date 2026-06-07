@@ -1,11 +1,15 @@
 <div class="cv-title">
   <div class="title-row font-sans">
-    <div class="col left font-bold">chinguoren999@hotmail.com</div>
+    <div class="col left font-bold">
+      <a href="mailto:chinguoren999@hotmail.com" style="color: inherit; text-decoration: none;">chinguoren999@hotmail.com</a>
+    </div>
     <div class="col center">
       <div class="name">CHIN GUO REN</div>
-      <div class="degree tracking-tight">DEGREE IN INFORMATION TECHNOLOGY</div>
+      <div class="degree tracking-tight">QUICK LEARNER, WILLING TO TAKE UP ANY CHALLENGE</div>
     </div>
-    <div class="col contact-right font-bold">+601131850270</div>
+    <div class="col contact-right font-bold">
+      <a href="https://wa.me/601131850270" target="_blank" style="color: inherit; text-decoration: none;">+601131850270</a>
+    </div>
   </div>
 </div>
 
@@ -143,6 +147,9 @@
 
     <div class="section-title">Motto</div>
     <p>"Speed and Safety"</p>
+
+    <div class="section-title">My Wish</div>
+    <p>Wish to find a remote work soon!</p>
   </div>
 </div>
 <a href="/contactMe" class="contact-float" title="Contact Me">
@@ -187,7 +194,18 @@
 
   .col {
     flex: 1;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .center {
     text-align: center;
+  }
+
+  .contact-right {
+    text-align: right;
   }
 
   .center .name {
@@ -254,11 +272,20 @@
   .skills-list,
   .projects-list,
   .education-list,
-  .contact-list,
   .tech-list {
     font-size: 0.95em;
     line-height: 1.6em;
     color: var(--text-muted);
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+
+  .contact-list {
+    font-size: 0.95em;
+    line-height: 1.6em;
+    color: var(--text-muted);
+    list-style-type: none;
+    padding-left: 0;
   }
 
   .contact-list a {

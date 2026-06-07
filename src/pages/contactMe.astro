@@ -16,12 +16,11 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
         <section class="hero">
           <h1 class="hero-title">
             <span class="avatar-container">
-              <img src="./src/assets/guoren.jpeg" alt="AI Avatar" />
+              <img src="/assets/guoren.jpeg" alt="AI Avatar" />
             </span> Meet Chin Guo Ren
           </h1>
           <p>
-            This is your direct line to Chin Guo Ren, the legendary coder who
-            treats coding as a side dish.
+            Passionate Lifelong Learner
           </p>
         </section>
 
@@ -32,7 +31,7 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
               <h2>My Contact Info</h2>
               <div class="profile-content">
                 <img
-                  src="./src/assets/guoren.jpeg"
+                  src="/assets/guoren.jpeg"
                   alt="Chin Guo Ren"
                   class="profile-image"
                 />
@@ -53,7 +52,7 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
                   <p class="profile-link">
                     <strong>LinkedIn:</strong>
                     <a
-                      href="https://www.linkedin.com/in/chinguoren999"
+                      href="https://www.linkedin.com/in/guo-ren-chin-6a6322120/"
                       target="_blank">linkedin.com/in/chinguoren999</a
                     >
                   </p>
@@ -69,7 +68,7 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
               <ul class="friends-list">
                 <li class="friend-card">
                   <img
-                    src="./src/assets/peter.jpg"
+                    src="/assets/peter.jpg"
                     alt="Peter Avatar"
                     class="friend-avatar"
                   />
@@ -77,14 +76,14 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
                     <h3>Peter</h3>
                     <p class="role">IT manager</p>
                     <p class="note">
-                      “Working with Guo Ren is a designer’s dream—he turns ideas
-                      into pixel-perfect reality with legendary speed.”
+                      “He guided me in many aspects of networking such as DNS, routing, and firewall configurations, taught me a lot about managing cabling projects. He is a true professional and always delivers on time.”
                     </p>
+                    <a href="https://wa.me/60165044497" class="call-button">💬 WhatsApp Peter</a>
                   </div>
                 </li>
                 <li class="friend-card">
                   <img
-                    src="./src/assets/ken.png"
+                    src="/assets/ken.png"
                     alt="Ken Avatar"
                     class="friend-avatar"
                   />
@@ -92,14 +91,14 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
                     <h3>Ken</h3>
                     <p class="role">Project Senior Executive</p>
                     <p class="note">
-                      “Guo Ren’s code is so clean, it’s practically
-                      self-documenting. The go-to guy for backend wizardry.”
+                      “We had lunch together a lot of times and he shared his insights on project management and leadership. It was a valuable exchange.”
                     </p>
+                    <a href="https://wa.me/60143090311" class="call-button">💬 WhatsApp Ken</a>
                   </div>
                 </li>
                 <li class="friend-card">
                   <img
-                    src="./src/assets/yi_ni.png"
+                    src="/assets/yi_ni.png"
                     alt="Tan Yi Ni Avatar"
                     class="friend-avatar"
                   />
@@ -107,9 +106,9 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
                     <h3>Tan Yi Ni</h3>
                     <p class="role">Purchasing Executive</p>
                     <p class="note">
-                      “Every startup needs a Guo Ren—he solves problems before
-                      you even know they exist. A true legend in tech.”
+                      “She guided me in many aspects of purchasing such as negotiation, contract management, and vendor relationship building.”
                     </p>
+                    <a href="https://wa.me/60164466398" class="call-button">💬 WhatsApp Yi Ni</a>
                   </div>
                 </li>
               </ul>
@@ -319,6 +318,24 @@ import Layout from "../layouts/Layout.astro"; // If you're using a shared layout
             font-size: 0.85em;
             color: #6c757d;
             font-style: italic;
+          }
+
+          .call-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 12px;
+            background-color: #e63946;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+          }
+
+          .call-button:hover {
+            background-color: #1d3557;
+            color: #ffffff;
           }
         </style>
       </main>
